@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black uppercase">
+
+    <button id="back_btn" class="flex absolute top-4 left-4 text-gray-500 hover:text-dark_red">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z"/>
+        </svg>
+    </button>
+
+    <div class="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen my-2">
+
+        <div class="mb-4 lg:mb-5">
+            <button id="prev-btn" class="flex items-center justify-center w-8 h-8 ml-2 rounded-full bg-deep_red hover:bg-dark_red">
+                <img src="./images/back_arrow_icon.svg" alt="Play" class="w-7 h-7" />
+            </button>
+        </div>
+
+        <div class="relative w-64 h-44 xxs:w-80 xxs:h-52 mini_sm:w-card_width mini_sm:h-72 rounded-rounded_4xl md:rounded-rounded_5xl flex items-center justify-center bg-off_white text-deep_red">
+            <p id="q-text" class="text-center font-medium text-xs mini_sm:text-base px-5 mini_sm:px-10">
+
+            </p>
+            <p id="level-text" class="absolute text-center font-normal bottom-2 mini_sm:bottom-4 text-xs mini_sm:text-sm">Level X ( Perception )</p>
+        </div>
+
+        <div class="w-64 xxs:w-80 mini_sm:w-card_width h-1 bg-grey rounded-lg mt-4 lg:mt-5">
+            <div id="progress-bar" class="h-full bg-off_white rounded-lg" style="width: 20%;"></div>
+        </div>
+
+        <div class="flex justify-center items-center mt-4">
+            <button class="w-6 h-6 bg-transparent bg-no-repeat bg-center mr-4" style="background-image: url('./images/heart_icon.png');"></button>
+            <button class="w-6 h-6 bg-transparent bg-no-repeat bg-center" style="background-image: url('./images/shuffle_icon.png');"></button>
+        </div>
+
+
+        <div class="mt-4 lg:mt-5">
+            <button id="next-btn" class="flex items-center justify-center w-8 h-8 ml-2 rounded-full bg-deep_red hover:bg-dark_red">
+                <img src="./images/arrow_icon.svg" alt="Play" class="w-7 h-7" />
+            </button>
+        </div>
+
+    </div>
+
+    <script src="js/cards.js"></script>
+    
+</body>
+
+</html>
