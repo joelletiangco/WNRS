@@ -22,10 +22,10 @@ module.exports = {
       },
       width: {
         card_width: '420px',
-      }
-      // fontFamily: {
-      //   'inter': []
-      // }
+      },
+      fontSize: {
+        'xxs': '0.6rem',
+      },
     },
   },
   plugins: [],
